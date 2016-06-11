@@ -1,0 +1,7 @@
+@import 'common-variables';
+
+input[type="text"]{
+  &.success{color : $success-font-color;}
+  &.error{color : $error-font-color; background-color: $error-background-color;}
+  &.warning{color: #ff0001;}
+}
