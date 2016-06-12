@@ -1,7 +1,38 @@
 @import 'common-variables';
 
-input[type="text"]{
-  &.success{color : $success-font-color;}
-  &.error{color : $error-font-color; background-color: $error-background-color;}
-  &.warning{color: #ff0001;}
+.form-group{padding-bottom:$form-group-separation;
+
+  &:after{clear:both;content:' ';}
+
+  .label-wrapper{text-align:right;float:left;padding:$label-padding-vertical 0 0 0;margin:$label-margin; width:$label-width;}
+  label{display:block;padding:0 $label-padding-horizontal;
+    span{font-family:Arial;
+      &.error{color : $error-border-color;}
+    }
+  }
+
+  .input-wrapper{min-width:25px; max-width:$input-container-width;text-align:left;float:left;position:relative;
+
+    input[type="text"]{width:$input-width;font-size:$text-font-size;font-family: $data-font-family;height:$input-height;padding:$input-padding;margin:$input-margin;border:$input-border;color:$input-font-color;
+      &:focus{border:$input-border-focus;}
+
+      &.success{color : $success-font-color; background-color: $success-background-color; border-color:$success-border-color;}
+      &.error{color : $error-font-color; background-color: $error-background-color; border-color:$error-border-color;}
+      &.warning{color : $warning-font-color; background-color: $warning-background-color; border-color:$warning-border-color;}
+    }
+    .input-message{text-align:left;position:absolute;font-size:$input-message-font-size;display:block;padding:$input-message-padding;font-family: $data-font-family;min-height:$input-message-height;border-radius:$input-message-radius;
+      &.right,&.hover{top:0;right:(-$input-message-right-margin)-$input-message-right-width;width:$input-message-right-width;}
+      &.top{bottom:$input-message-y-position;left:0;width:400%}
+      &.bottom{top:$input-message-y-position;left:0;width:400%}
+      &.hover{display:none;}
+      &.success{color : $success-font-color; /*background-color: $success-background-color; border:1px solid $success-border-color;*/}
+      &.error{color : $error-font-color; /*background-color: $error-background-color; border:1px solid $error-border-color;*/}
+      &.warning{color : $warning-font-color; /*background-color: $warning-background-color; border:1px solid $warning-border-color;*/}
+    }
+
+    &:hover{
+      .input-message.hover{display:block;}
+    }
+  }
 }
+

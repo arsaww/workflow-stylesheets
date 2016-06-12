@@ -1,109 +1,52 @@
-$error-font-color : #990000;
-$error-border-color : #990000;
-$error-background-color : #eecec1;
+/** Fonts **/
+$text-font-family : 'Poynter', Georgia, Serif;
+$data-font-family :  Arial, sans-serif;
+$text-font-size:14px;
+
+/** Colors **/
+$text-font-color : #3C3C3C;
+$input-font-color: rgb(85, 85, 85);
+
+$error-font-color : #bd0000;
+$error-border-color : #bd0000;
+$error-background-color : #ffeaec;
 
 $success-font-color : #228855;
 $success-border-color : #228855;
-$success-background-color : #b3e3aa;
+$success-background-color : #eefdeb;
 
+$warning-font-color : #c1a409;
+$warning-border-color : #daa32d;
+$warning-background-color : #fff6ce;
 
-/* RESET CSS BELOW */
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-  margin:0;
-  padding:0;
-  border:0;
-  outline:0;
-  font-size:100%;
-  vertical-align:baseline;
-  background:transparent;
-}
+/** borders **/
+$input-border : 1px rgb(182, 191, 208) solid;
+$input-border-focus : 1px rgb(88, 97, 118) solid;
 
-body {
-  line-height:1;
-}
+/** frame size **/
+$overview-frame-width : 800px;
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-  display:block;
-}
+/** form size **/
+$form-group-separation:8px;
 
-nav ul {
-  list-style:none;
-}
+$label-width:25%; //#1
+$label-padding-vertical:7px;
+$label-padding-horizontal:15px;
+$label-margin:1px 0 0 0;
 
-ul {
-  padding: 0;
-  list-style-type: none;
-}
+$input-container-width:75%; //#1
+$input-container-padding:0 15px;
+$input-container-margin:0;
 
-blockquote, q {
-  quotes:none;
-}
+$input-margin:0;
+$input-height:20px;
+$input-padding:3px 8px;
+$input-width:100%;
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content:'';
-  content:none;
-}
-
-a {
-  margin:0;
-  padding:0;
-  font-size:100%;
-  vertical-align:baseline;
-  background:transparent;
-}
-
-/* change colours to suit your needs */
-ins {
-  background-color:#ff9;
-  color:#000;
-  text-decoration:none;
-}
-
-/* change colours to suit your needs */
-mark {
-  background-color:#ff9;
-  color:#000;
-  font-style:italic;
-  font-weight:bold;
-}
-
-del {
-  text-decoration: line-through;
-}
-
-abbr[title], dfn[title] {
-  border-bottom:1px dotted;
-  cursor:help;
-}
-
-table {
-  border-collapse:collapse;
-  border-spacing:0;
-}
-
-/* change border colour to suit your needs */
-hr {
-  display:block;
-  height:1px;
-  border:0;
-  border-top:1px solid #cccccc;
-  margin:1em 0;
-  padding:0;
-}
-
-input, select {
-  vertical-align:middle;
-}
+$input-message-font-size:11px;
+$input-message-right-width:150px;
+$input-message-radius:2px;
+$input-message-padding:8px;
+$input-message-right-margin:15px;
+$input-message-height:11px;
+$input-message-y-position:22px;

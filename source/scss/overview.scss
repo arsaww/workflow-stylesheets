@@ -1,0 +1,7 @@
+@import 'common-variables';
+
+.overview.render{padding:20px;clear:both;position:relative;width:auto;
+  .settings{position:absolute;right:1px;top:1px;border:1px black solid;margin:0 10px;}
+  .settings-panel{padding:2px;}
+  table td{padding:2px;}
+}
